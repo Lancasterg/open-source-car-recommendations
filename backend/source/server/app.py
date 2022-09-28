@@ -1,8 +1,8 @@
-from flask import Flask, jsonify
-from flask_restful import Resource, Api
+from flask import Flask
 from flask_cors import CORS
-from source.server.database.models.db_mot_history import init_database
+from flask_restful import Api
 
+from source.server.database.models.db_mot_history import init_database
 from source.server.endpoints.v1 import MotApi
 
 app = Flask(__name__)
